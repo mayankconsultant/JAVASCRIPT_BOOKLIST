@@ -12,10 +12,11 @@ class Store {
   static getBooks() {
     let books;
     if (localStorage.getItem("books") == null) {
-      book = [];
+      books = [];
     } else {
       books = JSON.parse(localStorage.getItem("books"));
     }
+    return books;
   }
 
   static addBook(book) {
@@ -53,7 +54,9 @@ class UI {
     //     isbn: "789",
     //   },
     // ];
+
     const books = Store.getBooks();
+
     books.forEach((book) => UI.addBooktoList(book));
   }
 
