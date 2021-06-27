@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/a99e3d330b.js"
+    >
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- sidebar style -->
+    <link rel="stylesheet" href="css/sidebar.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar"  class=" active" aria-expanded="false">
+        <div class="sidebar-header ">
+          <h3>Learning Sidebar</h3>
+        </div>
+        <!-- Sidebar  Items -->
+        <ul class="list-unstyled components ml-2">
+          
+          <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <span class="text-secondary"> <i class="fas fa-cloud    "></i> </span>
+                
+                Home
+              </a>
+              <ul class="collapse list-unstyled ml-2" id="homeSubmenu">
+                  <li>
+                      <a href="#">
+                      <span><i class="fas fa-home"></i>
+                      </span>
+                        Home 1
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">Home 2</a>
+                  </li>
+                  <li>
+                      <a href="#">Home 3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">
+                <span><i class="fas fa-address-card    "></i></span>
+                About</a>
+          </li>
+          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <span>
+                  <i class="fas fa-columns    "></i>
+                </span>
+                Pages</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      <a href="#">Page 1</a>
+                  </li>
+                  <li>
+                      <a href="#">Page 2</a>
+                  </li>
+                  <li>
+                      <a href="#">Page 3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">
+                <span>
+                <i class="fas fa-portrait    "></i>
+                </span>
+                Portfolio</a>
+          </li>
+          <li>
+              <a href="#">
+                <span>
+                  <i class="fas fa-sim-card    "></i>
+                  </span>
+                Contact</a>
+          </li>
+      </ul>
+
+
+      </nav>
+
+      <div class="container-fluid">
+       
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+  
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-right"></i>
+                  <span>Toggle Sidebar</span>
+              </button>
+  
+          
+              <!-- <div class="collapse navbar-collapse" id="navbarNav2"> -->
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">User <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Logout</a>
+                    </li>
+            
+                </ul>
+              <!-- </div> -->
+            
+        </nav>
+      
+      
+      
+  </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" >
+    </script>
+
+    <script>
+      $(document).ready(function () {
+
+$('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+
+    console.log('button clicked');
+});
+
+});
+    </script>
+  </body>
+</html>

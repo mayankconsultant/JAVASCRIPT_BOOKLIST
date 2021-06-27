@@ -3,5 +3,13 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"workbench.settings.editor": "json",
+		"editor.fontSize": 16,
+		"files.exclude": {
+			".gitignore": true,
+			"venv/": true
+		}
+	}
 }
